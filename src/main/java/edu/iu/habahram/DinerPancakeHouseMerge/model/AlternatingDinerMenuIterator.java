@@ -2,7 +2,7 @@ package edu.iu.habahram.DinerPancakeHouseMerge.model;
 
 import java.util.Calendar;
 import java.util.Iterator;
-
+//part5
 public class AlternatingDinerMenuIterator implements Iterator<MenuItem> {
     MenuItem[] items;
     int position;
