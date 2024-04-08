@@ -35,4 +35,15 @@ public class PancakeHouseMenu extends Menu {
         MenuItem menuItem = new MenuItem(name, description, vegetarian, price);
         add(menuItem);
     }
+    public boolean containsItem(String itemName) {
+        MenuItem[] menuItems = getItems();
+
+        for (MenuItem menuItem : menuItems) {
+            if (menuItem.getName().equalsIgnoreCase(itemName)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
 }

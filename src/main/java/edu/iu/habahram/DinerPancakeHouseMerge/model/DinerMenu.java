@@ -1,6 +1,7 @@
 package edu.iu.habahram.DinerPancakeHouseMerge.model;
 
 import java.awt.*;
+import java.util.ArrayList;
 import java.util.Iterator;
 
 public class DinerMenu extends Menu {
@@ -30,4 +31,18 @@ public class DinerMenu extends Menu {
         MenuItem menuItem = new MenuItem(name, description, vegetarian, price);
         add(menuItem);
     }
+
+    public boolean containsItem(String itemName) {
+        MenuItem[] menuItems = getItems();
+
+        for (MenuItem menuItem : menuItems) {
+            if (menuItem.getName().equalsIgnoreCase(itemName)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+
 }

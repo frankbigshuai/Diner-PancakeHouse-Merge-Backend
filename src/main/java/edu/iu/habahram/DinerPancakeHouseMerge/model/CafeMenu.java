@@ -27,6 +27,17 @@ public class CafeMenu extends Menu{
     }
 
 
+    public boolean containsItem(String itemName) {
+        MenuItem[] menuItems = getItems();
+
+        for (MenuItem menuItem : menuItems) {
+            if (menuItem.getName().equalsIgnoreCase(itemName)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
 
 
 
