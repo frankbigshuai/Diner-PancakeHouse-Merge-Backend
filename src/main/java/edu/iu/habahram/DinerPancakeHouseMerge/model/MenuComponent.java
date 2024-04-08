@@ -1,6 +1,5 @@
 package edu.iu.habahram.DinerPancakeHouseMerge.model;
 
-public class MenuComponent {
     public abstract class MenuComponent {
         public void add(MenuComponent menuComponent) {
             throw new UnsupportedOperationException();
@@ -28,5 +27,5 @@ public class MenuComponent {
         public MenuItem[] getItems() {
             throw new UnsupportedOperationException();
         }
-    }
+
 }

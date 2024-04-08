@@ -1,6 +1,8 @@
 package edu.iu.habahram.DinerPancakeHouseMerge.model;
 
-public class MenuItem {
+import edu.iu.habahram.DinerPancakeHouseMerge.model.MenuComponent;
+
+public class MenuItem extends MenuComponent {
     String name;
     String description;
     boolean vegetarian;
@@ -34,5 +36,10 @@ public class MenuItem {
     }
     public String toString() {
         return (name + ", $" + price + "\n   " + description);
+    }
+    public MenuItem[] getItems() {
+        MenuItem[] items = new MenuItem[1];
+        items[0] = this;
+        return items;
     }
 }
