@@ -99,11 +99,9 @@ public class MergerController {
     }
 
     @PostMapping("/signup")
-
     public void signup(@RequestBody Customer customer){
         try{
             customerRepository.save(customer);
-
         }
         catch (Exception e){
             throw new RuntimeException(e);
